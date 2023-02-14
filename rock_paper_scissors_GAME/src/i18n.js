@@ -20,30 +20,48 @@ i18n
       en: {
         translation: {
           d: {
+            greeting: 'Hello',
             navHome: 'Home',
             navGame: 'Game',
             navScoreBoard: 'Scoreboard',
-            gameRules: 'The game is played where players deliver hand signals that will represent the elements of the game; rock, paper and scissors. The outcome of the game is determined by 3 simple rules: Rock wins against scissors. Scissors win against paper. Paper wins against rock.'
+            gameRules: 'The game is played where players deliver hand signals that will represent the elements of the game; rock, paper and scissors. The outcome of the game is determined by 3 simple rules: Rock wins against scissors. Scissors win against paper. Paper wins against rock.',
+            userChoice: 'User choise is:',
+            computerChoice:'Computer choice is:',
+            gameScore: 'Game score: ',
+            gameScorePoints: 'points', 
+            starterText: 'CHOOSE YOUR WEAPON'
           }
         }
       },
       de: {
         translation: {
           d: {
+            greeting: 'Hallo',
             navHome: 'Heim',
             navGame: 'Spiel',
             navScoreBoard: 'Anzeigetafel',
-            gameRules: 'Das Spiel wird gespielt, wenn Spieler Handzeichen geben, die die Elemente des Spiels darstellen; Stein, Papier und Schere. Der Ausgang des Spiels wird durch 3 einfache Regeln bestimmt: Stein gewinnt gegen Schere. Schere gewinnt gegen Papier. Papier gewinnt gegen Stein.'
+            gameRules: 'Das Spiel wird gespielt, wenn Spieler Handzeichen geben, die die Elemente des Spiels darstellen; Stein, Papier und Schere. Der Ausgang des Spiels wird durch 3 einfache Regeln bestimmt: Stein gewinnt gegen Schere. Schere gewinnt gegen Papier. Papier gewinnt gegen Stein.',
+            userChoice: 'Benutzerauswahl ist:',
+            computerChoice: 'Computerwahl ist:',
+            gameScore: 'Spielergebnis:',
+            gameScorePoints: 'punkte',
+            starterText: 'WÄHLE DEINE WAFFE'
           }
         }
       },
       lv: {
         translation: {
-          d: {            
+          d: {
+            greeting: 'Čau',            
             navHome: 'Mājas',
             navGame: 'Spēle',
             navScoreBoard: 'Rezultātu tabula',
-            gameRules: 'Spēle tiek spēlēta, kur spēlētāji sniedz rokas signālus, kas attēlos spēles elementus; akmens, papīrs un šķēres. Spēles iznākumu nosaka 3 vienkārši noteikumi: Akmens uzvar pret šķērēm. Šķēres uzvar pret papīru. Papīrs uzvar pret akmeni.'
+            gameRules: 'Spēle tiek spēlēta, kur spēlētāji sniedz rokas signālus, kas attēlos spēles elementus; akmens, papīrs un šķēres. Spēles iznākumu nosaka 3 vienkārši noteikumi: Akmens uzvar pret šķērēm. Šķēres uzvar pret papīru. Papīrs uzvar pret akmeni.',
+            userChoice: 'Lietotāja izvēle ir:',
+            computerChoice:'Datora izvēle ir:',
+            gameScore: 'Spēles rezultāts:',
+            gameScorePoints: 'punkti',
+            starterText: 'IZVĒLIES SAVU IEROCI'
           }
         }
       }

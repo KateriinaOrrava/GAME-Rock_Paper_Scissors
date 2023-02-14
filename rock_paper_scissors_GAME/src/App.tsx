@@ -4,11 +4,13 @@ import {
   Route,
 } from "react-router-dom";
 import Home from './pages/home/Home';
+import GamePlay from './pages/GamePlay/GamePlay';
 import Scoreboard from './pages/Scoreboard/Scoreboard';
 import Game from './pages/Game/Game';
 import { NavLink } from 'react-router-dom';
 import 'react-toastify/dist/ReactToastify.css';
 import { useTranslation, Trans } from 'react-i18next';
+import GameStatistics from './pages/GameStatistics/GameStatistics';
 
 type lng = {
     nativeName: string;
@@ -30,14 +32,16 @@ function App() {
         <nav className='navigation_container navMenu'>
           <div className='navigation_container__nav_links'>          
             <NavLink to="/">{t('d.navHome')}</NavLink> 
-            <NavLink to="/game">{t('d.navGame')}</NavLink>
+            <NavLink to="/gamePlay">{t('d.navGame')}</NavLink>
             <NavLink to="/scoreboard">{t('d.navScoreBoard')}</NavLink>
           </div>
         </nav>
       <Routes>
           <Route path="/" index element={<Home />}/>
           <Route path='/game' element={<Game />} />
+          <Route path='/gamePlay' element={<GamePlay />} />
           <Route path="/scoreboard" element={<Scoreboard />} />
+          <Route path="/GameStatistics" element={<GameStatistics />} />
           <Route path="*" element={<h1>404 page not found</h1>} />
       </Routes>
 <footer>

@@ -1,0 +1,116 @@
+.game{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+.gameResult{
+    display:flex;
+    flex-direction: row;
+    justify-content: center
+}
+.userChoice{
+    font-size:70px;
+    background-color: transparent;
+    padding:10px;
+}
+.infoContainer{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.gameFieldContainer{
+    height: 100%;
+    width: 100%;
+    display:flex;
+    align-items: center;
+    background-color: rgb(172,207,203, 0.2)
+}
+.gamePlayersChoices{
+    height: 100%;
+    width: 100%;
+    display:flex;
+    justify-content: space-around
+}
+.userFieldPart{
+    display:flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}
+
+.computerFieldPart{
+    display:flex;
+    flex-direction: column;
+    font-size:70px;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+
+}
+
+.pointResult{
+    text-align: center;
+}
+.gamePlayersChoices h2{
+padding:0px;
+margin:0px;
+}
+.title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 100px;
+    text-transform: uppercase;
+    width: 50%;
+  }
+
+  
+  .title_word_1 {
+    animation: color-animation 4s linear infinite;
+    --color-1: #DF8453;
+    --color-2: #3D8DAE;
+    --color-3: #E4A9A8;    
+    --color-1: #64a8a0;
+    --color-2: #E4A9A8;
+    --color-3: #97ac5d;
+  }
+  .gameMainHeading, .gameGreeting{
+    margin:0px;
+  }
+  .title_word_2 {
+    animation: color-animation 4s linear infinite;
+    --color-1: #DBAD4A;
+    --color-2: #ACCFCB;
+    --color-3: #17494D;    
+    --color-1: #3D8DAE;
+    --color-2: #DF8453;
+    --color-3: #E4A9A8;
+  }
+
+  
+  @keyframes color-animation {
+    0%    {color: var(--color-1)}
+    32%   {color: var(--color-1)}
+    33%   {color: var(--color-2)}
+    65%   {color: var(--color-2)}
+    66%   {color: var(--color-3)}
+    99%   {color: var(--color-3)}
+    100%  {color: var(--color-1)}
+  }
+
+
+  .buttonEndGame{
+    border-radius:50%;
+    height: 100px;
+    width: 100px;
+  }
+  .buttonEndGame:hover{
+    border:none;
+    background-color: rgb(235, 154, 154);
+  }

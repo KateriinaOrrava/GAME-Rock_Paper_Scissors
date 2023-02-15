@@ -18,13 +18,15 @@ const GamePlay = () => {
       e.preventDefault();
     }
     return (
+      
         <div className = {styles.game}>
+          <p>{t('d.gameRulesPlay')}</p>
           <form onSubmit = { handleSubmit }>
             <label>
-              Enter username:
+            {t('d.enterUsername')}:
               <input type="text" 
               name="username" 
-              value={userName} 
+              placeholder={userName} 
               onChange={(e)=>setUserName(e.target.value)}
               required/>
             </label>

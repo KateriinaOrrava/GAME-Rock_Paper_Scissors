@@ -20,6 +20,7 @@ i18n
       en: {
         translation: {
           d: {
+            handSignals:"<h2>The Hand Signals</h2>",
             greeting: 'Hello',
             navHome: 'Home',
             navGame: 'Game',
@@ -29,13 +30,25 @@ i18n
             computerChoice:'Computer choice is:',
             gameScore: 'Game score: ',
             gameScorePoints: 'points', 
-            starterText: 'CHOOSE YOUR WEAPON'
+            starterText: 'CHOOSE YOUR WEAPON',
+            gameRulesPlay: 'GAME RULES: You will compete with a computer. You can choose 3 weapons: rock ✊, scissors✌️ or paper🤚. For each time you win, you get 1 point. For each time computer wins, you will loose a point. In the end of the game you will see GAME STATISTICS, that will be having all the information about your battle with the computer. Good luck and remember - IT IS NOT A GAME, it is a BATTLE 🥷',
+            statistics: 'STATISTICS',
+            playerName: 'PLAYER NAME:',
+            timesPlayed: 'TIMES PLAYED:',
+            WINNINGpERCENTAGE: 'WINNING PERCENTAGE:',
+            gamePoints: 'GAME POINTS:',
+            paper: 'PAPER:',
+            rock: 'ROCK:',
+            scissors: 'SCISSORS:',
+            timesOr: 'times or',
+            enterUsername: 'Enter name'
           }
         }
       },
       de: {
         translation: {
           d: {
+            handSignals:"<h2>The Hand Signals</h2>",
             greeting: 'Hallo',
             navHome: 'Heim',
             navGame: 'Spiel',
@@ -45,13 +58,25 @@ i18n
             computerChoice: 'Computerwahl ist:',
             gameScore: 'Spielergebnis:',
             gameScorePoints: 'punkte',
-            starterText: 'WÄHLE DEINE WAFFE'
+            starterText: 'WÄHLE DEINE WAFFE',
+            gameRulesPlay: 'SPIELREGELN: Sie treten gegen einen Computer an. Du kannst 3 Waffen wählen: Stein✊, Schere✌️ oder Papier🤚. Für jeden Gewinn erhalten Sie 1 Punkt. Für jedes Mal, wenn der Computer gewinnt, verlieren Sie einen Punkt. Am Ende des Spiels sehen Sie die SPIELSTATISTIK, die alle Informationen über Ihren Kampf mit dem Computer enthält. Viel Glück und denk dran - ES IST KEIN SPIEL, es ist ein KAMPF 🥷',
+            statistics: 'STATISTIKEN',
+            playerName: 'SPIELERNAME:',
+            timesPlayed: 'TIMES PLAYED:',
+            WINNINGpERCENTAGE: 'GEWINNPROZENT:',
+            gamePoints: 'SPIELPUNKTE:',
+            paper: 'PAPIER:',
+            rock: 'FELSEN:',
+            scissors: 'SCHERE:',
+            timesOr: 'mal oder',
+            enterUsername: 'Name eingeben'
           }
         }
       },
       lv: {
         translation: {
           d: {
+            handSignals:"<h2>Rokas signāli</h2>",
             greeting: 'Čau',            
             navHome: 'Mājas',
             navGame: 'Spēle',
@@ -61,10 +86,21 @@ i18n
             computerChoice:'Datora izvēle ir:',
             gameScore: 'Spēles rezultāts:',
             gameScorePoints: 'punkti',
-            starterText: 'IZVĒLIES SAVU IEROCI'
-          }
+            starterText: 'IZVĒLIES SAVU IEROCI',
+            gameRulesPlay: 'SPĒLES NOTEIKUMI: Tu sacentīsies ar datoru. Var izvēlēties 3 ieročus: akmens ✊, šķēres✌️ vai papīrs🤚. Par katru uzvaru tu saņem 1 punktu. Par katru reizi, kad dators uzvar, tu zaudēsi punktu. Spēles beigās tu redzēsi SPĒLES STATISTIKU, kurā būs visa informācija par jūsu cīņu ar datoru. Lai veicas un atceries - TĀ NAV SPĒLE, tā ir KAUJA 🥷',
+            statistics: 'STATISTIKA',
+            playerName: 'SPĒLĒTĀJA VĀRDS:',
+            timesPlayed: 'REIZES SPĒLĒTS:',
+            WINNINGpERCENTAGE: 'UZVARU PROCENTUĀLĀ ATTIECĪBA',
+            gamePoints: 'SPĒLES PUNKTI:',
+            paper: 'PAPĪRS:',
+            rock: 'AKMENS:',
+            scissors: 'ŠĶĒRES:',
+            timesOr: 'reizes vai',
+            enterUsername: 'Ievadi vārdu'
         }
       }
+    }
     }
   });
 

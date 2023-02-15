@@ -1,4 +1,14 @@
 .stats {
     margin-top:40px;
     background-color: rgb(116, 114, 114, 0.1);
+    padding:40px;
+    border-radius: 20px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+}
+.stats p{
+    margin:0px;
+    padding:5px 5px;
 }

@@ -1,0 +1,41 @@
+.gameRules{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+.routeContent{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+    align-items: center;
+}
+.cards{
+  margin-bottom: 100px;
+  align-items: center;
+}
+.img{
+  height: 60px;
+}
+h2{
+  color:black;
+  text-align: center;
+}
+.storyContainer{
+  display:flex;
+  flex-wrap: wrap;
+  gap:20px;
+  justify-content: center;
+align-items: center;
+align-content: center;
+margin-bottom: 100px;
+}
+.FlashcardWrapper__item--content, 
+.FlashcardWrapper,
+.FlashcardWrapper__item--content, p{
+display: flex;
+justify-content: center;
+align-items: center;
+align-content: center;
+padding:20px;
+}

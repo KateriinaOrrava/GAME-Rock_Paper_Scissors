@@ -10,6 +10,11 @@ const Game = () => {
     const [computerChoice, setComputerChoice] = useState('...')
     const [result, setResult] = useState('💭')
     const [points, setPoints] = useState(0)
+    const [timesWin, setTimesWin] =useState(0)
+    const [timesPaper, setTimesPaper] =useState(0)
+    const [timesRock, setTimesRock] =useState(0)
+    const [timesScissors, setTimesScissors] =useState(0)
+    const timesLoose = roundCounter - timesWin;
     const choices = ['🤚', '✌️', '✊']
 
 
@@ -27,11 +32,26 @@ const Game = () => {
   
     useEffect(() => {
       {
+        switch (userChoice) {
+          case '✌️':
+            setTimesScissors(timesScissors+1)
+            break;
+          case '✊':
+            setTimesRock(timesRock+1)
+            break;
+          case '🤚':
+            setTimesPaper(timesPaper+1);
+            break;
+        }
+      }
+
+      {
         switch (userChoice + computerChoice) {
           case '✌️🤚':
           case '✊✌️':
           case '🤚✊':
             setResult('+1');
+            setTimesWin(+1);
             setPoints(points+1);
             setRoundCounter(roundCounter+1);
             break;
@@ -58,7 +78,12 @@ const Game = () => {
       navigate("/GameStatistics", {state: {
         userName: {userName},
         roundCounter: {roundCounter},
-        points: {points}
+        points: {points},
+        timesWin: {timesWin},
+        timesLoose: {timesLoose},
+        timesPaper: {timesPaper},
+        timesRock: {timesRock},
+        timesScissors: {timesScissors},
       }
       })
       e.preventDefault();

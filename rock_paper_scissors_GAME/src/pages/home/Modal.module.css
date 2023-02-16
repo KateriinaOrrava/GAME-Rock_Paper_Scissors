@@ -1,0 +1,20 @@
+.modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: aquamarine;
+    padding: 60px;
+    z-index: 1000;
+}
+.modalAround{
+    background-color: rgb(38, 39, 39, 0.8);
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    right: 0;
+    z-index: 1000;
+
+}

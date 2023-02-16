@@ -6,6 +6,8 @@
 }
 table{
     border:1px solid black; 
+    border-radius: 10px;
+    margin-top:40px;
     background: rgb(2,0,36);
     background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(180,180,186,1) 0%, rgba(245,249,250,1) 100%); 
     font-size: 25px;
@@ -14,8 +16,6 @@ table{
     width: 70%
 }; 
 
-th, td {
-        padding: 150px;
-        
-        
+ td {
+        color:grey;
     }

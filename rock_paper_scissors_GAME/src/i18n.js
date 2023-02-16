@@ -26,7 +26,7 @@ i18n
             navGame: 'Game',
             navScoreBoard: 'Scoreboard',
             gameRules: 'The game is played where players deliver hand signals that will represent the elements of the game; rock, paper and scissors. The outcome of the game is determined by 3 simple rules: Rock wins against scissors. Scissors win against paper. Paper wins against rock.',
-            userChoice: 'User choise is:',
+            userChoice: 'User choice is:',
             computerChoice:'Computer choice is:',
             gameScore: 'Game score: ',
             gameScorePoints: 'points', 
@@ -41,7 +41,9 @@ i18n
             rock: 'ROCK:',
             scissors: 'SCISSORS:',
             timesOr: 'times or',
-            enterUsername: 'Enter name'
+            enterUsername: 'Enter name',
+            playerName: 'Player name',
+            wins: 'Wins'
           }
         }
       },
@@ -69,7 +71,9 @@ i18n
             rock: 'FELSEN:',
             scissors: 'SCHERE:',
             timesOr: 'mal oder',
-            enterUsername: 'Name eingeben'
+            enterUsername: 'Name eingeben',
+            playerName: 'Spielername',
+            wins: 'Gewinnt'
           }
         }
       },
@@ -97,7 +101,9 @@ i18n
             rock: 'AKMENS:',
             scissors: 'ŠĶĒRES:',
             timesOr: 'reizes vai',
-            enterUsername: 'Ievadi vārdu'
+            enterUsername: 'Ievadi vārdu',
+            playerName: 'Spēlētāja vārds',
+            wins: 'Uzvaras'
         }
       }
     }

@@ -4,19 +4,24 @@ import styles from './GameStatisctics.module.css'
 const rounds=10;
 
 const GameStatistics= () => {
+    
     const location = useLocation();
+
     const {userName} = location.state.userName
     const {timesPaper} = location.state.timesPaper
     const {timesScissors} = location.state.timesScissors
     const {timesRock} = location.state.timesRock
     const {timesWin} = location.state.timesWin
     const winPerc = Math.round(timesWin/rounds*100);
+
     const { t } = useTranslation();
+
     const status = () => {
         if (winPerc===50){return "Draw"}
         if ( winPerc>50){return "WIN"}
         if ( winPerc<50){return "LOOSE"}
     }
+
     return (
         <div className={styles.stats}>
             <h1>{t('d.statistics')}</h1>            

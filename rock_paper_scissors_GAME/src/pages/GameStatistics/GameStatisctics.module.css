@@ -8,7 +8,7 @@
     flex-direction: column;
     gap:5px;
 }
-.stats p{
+.stats p, h1{
     margin:0px;
     padding:5px 5px;
 }

@@ -14,15 +14,14 @@
   margin-bottom: 100px;
   align-items: center;
 }
-.img{
-  height: 60px;
-}
+
 h2{
   color:black;
   text-align: center;
 }
 .storyContainer{
-  display:flex;
+  display:grid;
+  grid-template-columns: repeat;
   flex-wrap: wrap;
   gap:20px;
   justify-content: center;

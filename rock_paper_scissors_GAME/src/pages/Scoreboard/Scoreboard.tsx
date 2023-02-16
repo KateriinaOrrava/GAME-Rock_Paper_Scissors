@@ -1,11 +1,61 @@
-import { useTranslation, Trans } from 'react-i18next'; 
+import { useTranslation } from 'react-i18next'; 
+import axios from "axios";
+import { useQuery } from "@tanstack/react-query";
+import styles from './Scoreboard.module.css'
+import * as React from 'react'
+  export type Score = {
+    id: number,
+    gamePoints:number,
+    timesPaper:number,
+    timesPlayed:number,
+    timesRock:number,
+    timesScissors:number,
+    username:string,
+    winPerc:number,
+    }
+    const getAllScores = async () => {
 
-const Scoreboard = () => {
-    const { t, i18n } = useTranslation();
+    const { data } = await axios.get('http://localhost:3004/scores');
+        return data.data;
+    }
+const Scoreboard = () => {  
+    
+    const { t } = useTranslation();
+    const { data, isLoading } = useQuery<Score[]>(['scores'], () => getAllScores())
+
+    if (isLoading) {
+        return <h1>Loading...</h1>
+    }
+
+    if (!data) {
+        return <h1>Something went wrong...</h1>
+    }
+
     return (
-        <>
-        <h1>{t('d.navScoreBoard')}</h1>
-        </>
+        <div className={styles.scoreboard}>
+
+            <table key='tableOfScores'>
+                <thead key='tableOfScoresHead'>
+                    <tr  key='tableOfScoresHeadRow'>
+                        <th  key='tableOfScoresHeadRow'>Player ID</th>
+                        <th>Player NAME</th>
+                        <th>WINS </th>
+                        <th>✊</th>
+                        <th>✌️</th>
+                        <th>🤚</th>
+                    </tr>
+                </thead>
+                <tbody key='tableOfScoresBody'>
+                    {data.map((item) => (
+                        <tr key={item.id}>
+                        {Object.values(item).map((val) => (
+                            <td key={val}>{val}</td>
+                        ))}
+                        </tr>
+                ))}
+                </tbody>
+            </table>
+        </div>
     )
 }
 export default Scoreboard;

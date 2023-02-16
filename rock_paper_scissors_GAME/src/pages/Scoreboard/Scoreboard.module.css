@@ -1,0 +1,21 @@
+.scoreboard{
+    width: 100%;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+}
+table{
+    border:1px solid black; 
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(180,180,186,1) 0%, rgba(245,249,250,1) 100%); 
+    font-size: 25px;
+    padding: 40px;
+    text-align: left;
+    width: 70%
+}; 
+
+th, td {
+        padding: 150px;
+        
+        
+    }

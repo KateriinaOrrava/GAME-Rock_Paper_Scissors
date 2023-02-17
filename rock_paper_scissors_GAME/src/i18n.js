@@ -43,7 +43,8 @@ i18n
             timesOr: 'times or',
             enterUsername: 'Enter name',
             playerName: 'Player name',
-            wins: 'Wins'
+            wins: 'Wins',
+            round:'ROUND'
           }
         }
       },
@@ -73,7 +74,8 @@ i18n
             timesOr: 'mal oder',
             enterUsername: 'Name eingeben',
             playerName: 'Spielername',
-            wins: 'Gewinnt'
+            wins: 'Gewinnt',
+            round:'RUNDEN'
           }
         }
       },
@@ -103,7 +105,8 @@ i18n
             timesOr: 'reizes vai',
             enterUsername: 'Ievadi vārdu',
             playerName: 'Spēlētāja vārds',
-            wins: 'Uzvaras'
+            wins: 'Uzvaras',
+            round:'RAUNDS'
         }
       }
     }

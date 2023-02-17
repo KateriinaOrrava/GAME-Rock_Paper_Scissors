@@ -134,6 +134,7 @@ const Game = () => {
                     {computerChoice}
                 </div>
             </div>
+            <h4>{t('d.round')}{roundCounter}</h4>
     </div>
 
     )

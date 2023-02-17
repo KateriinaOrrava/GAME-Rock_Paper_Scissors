@@ -3,7 +3,7 @@ import styles from './Modal.module.css'
 import  ReactDOM  from 'react-dom'
 
 import { useState } from 'react'
-type Modal = {
+export type Modal = {
     children:ReactNode;
     open: boolean;
     onClose:() => void;

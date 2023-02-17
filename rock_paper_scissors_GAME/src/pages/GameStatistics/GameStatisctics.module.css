@@ -8,7 +8,8 @@
     flex-direction: column;
     gap:5px;
 }
-.stats p, h1{
+.stats p, h1, h2{
     margin:0px;
     padding:5px 5px;
+    text-align: center;
 }

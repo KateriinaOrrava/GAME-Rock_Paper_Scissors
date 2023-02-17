@@ -4,7 +4,7 @@ import styles from './GameStatisctics.module.css'
 const rounds=10;
 
 const GameStatistics= () => {
-    
+
     const location = useLocation();
 
     const {userName} = location.state.userName
@@ -17,15 +17,13 @@ const GameStatistics= () => {
     const { t } = useTranslation();
 
     const status = () => {
-        if (winPerc===50){return "Draw"}
-        if ( winPerc>50){return "WIN"}
-        if ( winPerc<50){return "LOOSE"}
+        if (winPerc===50){return "Draw"} else if ( winPerc>50){return "WIN"} else {return "LOOSE"}
     }
 
     return (
         <div className={styles.stats}>
-            <h1>{t('d.statistics')}</h1>            
-            <h1>{status()}</h1>            
+            <h2>{t('d.statistics')}</h2>            
+            <h1 >{status()}</h1>            
             <p>{t('d.playerName')} {userName.userName}</p>
             <p>{t('d.WINNINGpERCENTAGE')} {winPerc} %</p>
             <p>{t('d.paper')} {timesPaper} {t('d.timesOr')} {Math.round(timesPaper/rounds*100)} %</p>

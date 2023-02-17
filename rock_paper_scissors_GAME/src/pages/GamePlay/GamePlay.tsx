@@ -1,8 +1,8 @@
-import { useTranslation, Trans } from 'react-i18next'; 
+import { useTranslation } from 'react-i18next'; 
 import styles from './GamePlay.module.css'
-import { Navigate, Route, Routes, useNavigate } from "react-router-dom";
-import { Link } from "react-router-dom";
-import { useEffect, useState } from 'react'
+import { useNavigate } from "react-router-dom";
+
+import { useState } from 'react'
 
 const GamePlay = () => {
 
